@@ -1,0 +1,30 @@
+<html>
+<body>
+ <table id="table" border="1">
+    <tr class="odd">
+      <td>row 1</td>
+    </tr>
+    <tr class="even">
+      <td>row 2</td>
+    </tr>
+    <tr class="odd">
+      <td>row 3</td>
+    </tr>   
+    <tr class="even">
+      <td>row 4</td>
+    </tr>
+    <tr class="odd">
+      <td>row 5</td>
+    </tr>
+  </table>
+<button type = "button" onclick="myfunction()">Remove Odd</button>
+<script>
+function myfunction(){
+var tablelist = document.getElementsByClassName('odd');
+  for(var i = 0; i< tablelist.length;){
+     tablelist[i].parentNode.removeChild(tablelist[i])
+      }
+}
+</script>
+</body>
+</html>
